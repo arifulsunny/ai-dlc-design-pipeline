@@ -182,5 +182,3 @@ Design System Update
     deprecated-patterns.md
     future-improvement-notes.md
 ```
-
-adj
