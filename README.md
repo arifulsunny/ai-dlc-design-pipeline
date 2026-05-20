@@ -114,6 +114,8 @@ Design System Update
 ## Folder Structure
 ```
 design/
+├── source-reference-instructions.md
+│
 ├── 00-context/
 │   └── design-context.md
 │
@@ -182,3 +184,13 @@ design/
     ├── deprecated-patterns.md
     └── future-improvement-notes.md
 ```
+
+## Source Referencing
+
+When any design artifact is generated from multiple files, repositories, branches, issues, PRs, Figma files, documents, or other external sources, follow:
+
+```txt
+design/source-reference-instructions.md
+```
+
+That file defines the required source reference block, confidence levels, source gaps, conflict handling, and cross-repo safety rules.

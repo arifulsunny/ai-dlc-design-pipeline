@@ -1,0 +1,32 @@
+flowchart TD
+    A["GitHub Repo"] --> B["Main Context File"]
+    B --> C["Claude Design Context Intake"]
+    C --> D["Requirement to UX Brief"]
+    D --> E["User Role and Task Mapping"]
+    E --> F["User Flow and Information Architecture"]
+    F --> G["UX Strategy and Interaction Model"]
+    G --> H["Screen Specs and Layout Planning"]
+    H --> I["Style Guide and Design System Mapping"]
+    I --> J["Accessibility Review"]
+    J --> K["Scalability and Edge Case Review"]
+    K --> L["Prototype or Figma Documentation"]
+    L --> M["Multi-Agent Design Review"]
+    M --> N["Frontend and Backend Handoff"]
+    N --> O["Implementation Validation"]
+    O --> P["Design Documentation and Version Control"]
+    P --> Q["Design System Update"]
+
+    C --> R{"Missing context?"}
+    R -->|"Yes"| S["Add open questions and source gaps"]
+    S --> C
+    R -->|"No"| D
+
+    M --> T{"Review passed?"}
+    T -->|"No"| U["Revise impacted artifacts"]
+    U --> F
+    T -->|"Yes"| N
+
+    O --> V{"Implementation matches design?"}
+    V -->|"No"| W["Create audit issue and update handoff"]
+    W --> N
+    V -->|"Yes"| P
