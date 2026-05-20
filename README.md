@@ -80,6 +80,8 @@ GitHub Repo
 ↓
 Main Context File
 ↓
+Select Pipeline Usage Level
+↓
 Claude Design Context Intake
 ↓
 Requirement to UX Brief
@@ -102,6 +104,8 @@ Prototype or Figma Design
 ↓
 Multi-Agent Design Review
 ↓
+Design Readiness Scoring
+↓
 Frontend and Backend Handoff
 ↓
 Implementation Validation
@@ -109,6 +113,8 @@ Implementation Validation
 Design Documentation and Version Control
 ↓
 Design System Update
+↓
+Pattern Governance
 ```
 
 ## Folder Structure
@@ -178,12 +184,56 @@ design/
 │   ├── version-history.md
 │   └── release-design-notes.md
 │
-└── 14-design-system-update/
-    ├── design-system-update-log.md
-    ├── reusable-patterns.md
-    ├── deprecated-patterns.md
-    └── future-improvement-notes.md
+├── 14-design-system-update/
+│   ├── design-system-update-log.md
+│   ├── reusable-patterns.md
+│   ├── deprecated-patterns.md
+│   └── future-improvement-notes.md
+│
+├── 15-operating-model/
+│   ├── pipeline-usage-levels.md
+│   ├── design-readiness-score.md
+│   ├── re-entry-trigger-model.md
+│   └── raci-matrix.md
+│
+├── 16-claude-command-specs/
+│   ├── command-index.md
+│   ├── design-context.md
+│   ├── design-brief.md
+│   ├── user-flow.md
+│   ├── screen-spec.md
+│   ├── accessibility-review.md
+│   ├── handoff.md
+│   └── design-review.md
+│
+└── 17-pattern-governance/
+    ├── pattern-promotion-rules.md
+    ├── pattern-candidate-log.md
+    └── pattern-deprecation-rules.md
 ```
+
+## Operating Model
+
+Use `design/15-operating-model/pipeline-usage-levels.md` to choose the right amount of process:
+
+- Lite for small copy, visual, or local component changes.
+- Standard for normal screens and feature work.
+- Full for major flows, redesigns, permission-heavy features, and high-risk product areas.
+
+Use `design/15-operating-model/design-readiness-score.md` as the blocking readiness score before handoff.
+
+## Claude Command Specs
+
+Claude command contracts live in `design/16-claude-command-specs/`. Each command defines:
+
+- Inputs
+- Output file
+- Required sections
+- Quality score criteria
+- Pass threshold
+- Failure re-entry path
+
+Start with `design/16-claude-command-specs/command-index.md`.
 
 ## Source Referencing
 
