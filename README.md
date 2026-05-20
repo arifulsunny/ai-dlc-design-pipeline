@@ -19,7 +19,7 @@ However, without a proper design pipeline, teams may face issues such as:
 - Poor version control of design decisions
 - Fast implementation without enough product clarity
 
-This repository solves that gap by introducing a Claude powered design pipeline that works directly with repo based development.
+This repository solves that gap by introducing a Claude-powered design pipeline that works directly with repo based development.
 
 ## What This Pipeline Covers
 This design pipeline focuses on:
@@ -113,72 +113,72 @@ Design System Update
 
 ## Folder Structure
 ```
-/design
-  /00-context
-    design-context.md
-
-  /01-requirements
-    design-brief.md
-
-  /02-users
-    user-role-matrix.md
-    task-priority-map.md
-
-  /03-flow
-    user-flow.md
-    navigation-map.md
-    screen-inventory.md
-    flow-diagram.mmd
-
-  /04-ux
-    ux-principles.md
-    interaction-model.md
-    state-model.md
-
-  /05-layout
-    screen-specs.md
-    responsive-layout-rules.md
-    component-map.md
-
-  /06-style-guide
-    style-guide.md
-    design-tokens.json
-    component-usage-guidelines.md
-
-  /07-accessibility
-    accessibility-checklist.md
-    a11y-risk-report.md
-
-  /08-scalability
-    edge-case-matrix.md
-    scalability-notes.md
-    design-risk-log.md
-
-  /09-prototype
-    prototype-notes.md
-    interaction-spec.md
-
-  /10-review
-    design-review-report.md
-
-  /11-handoff
-    frontend-handoff.md
-    backend-impact.md
-    component-contract.md
-    acceptance-criteria.md
-
-  /12-validation
-    design-implementation-audit.md
-
-  /13-version-control
-    design-change-log.md
-    design-decision-records.md
-    version-history.md
-    release-design-notes.md
-
-  /14-design-system-update
-    design-system-update-log.md
-    reusable-patterns.md
-    deprecated-patterns.md
-    future-improvement-notes.md
+design/
+├── 00-context/
+│   └── design-context.md
+│
+├── 01-requirements/
+│   └── design-brief.md
+│
+├── 02-users/
+│   ├── user-role-matrix.md
+│   └── task-priority-map.md
+│
+├── 03-flow/
+│   ├── user-flow.md
+│   ├── navigation-map.md
+│   ├── screen-inventory.md
+│   └── flow-diagram.mmd
+│
+├── 04-ux/
+│   ├── ux-principles.md
+│   ├── interaction-model.md
+│   └── state-model.md
+│
+├── 05-layout/
+│   ├── screen-specs.md
+│   ├── responsive-layout-rules.md
+│   └── component-map.md
+│
+├── 06-style-guide/
+│   ├── style-guide.md
+│   ├── design-tokens.json
+│   └── component-usage-guidelines.md
+│
+├── 07-accessibility/
+│   ├── accessibility-checklist.md
+│   └── a11y-risk-report.md
+│
+├── 08-scalability/
+│   ├── edge-case-matrix.md
+│   ├── scalability-notes.md
+│   └── design-risk-log.md
+│
+├── 09-prototype/
+│   ├── prototype-notes.md
+│   └── interaction-spec.md
+│
+├── 10-review/
+│   └── design-review-report.md
+│
+├── 11-handoff/
+│   ├── frontend-handoff.md
+│   ├── backend-impact.md
+│   ├── component-contract.md
+│   └── acceptance-criteria.md
+│
+├── 12-validation/
+│   └── design-implementation-audit.md
+│
+├── 13-version-control/
+│   ├── design-change-log.md
+│   ├── design-decision-records.md
+│   ├── version-history.md
+│   └── release-design-notes.md
+│
+└── 14-design-system-update/
+    ├── design-system-update-log.md
+    ├── reusable-patterns.md
+    ├── deprecated-patterns.md
+    └── future-improvement-notes.md
 ```
